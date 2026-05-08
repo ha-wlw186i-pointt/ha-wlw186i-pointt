@@ -4,7 +4,7 @@
   "homeassistant": "2024.11.0",
   "codeowners": [],
   "config_flow": true,
-  "documentation": "https://github.com/your-username/ha-wlw186i-pointt",
+  "documentation": "https://github.com/ha-wlw186i-pointt/ha-wlw186i-pointt",
   "integration_type": "hub",
   "iot_class": "cloud_polling",
   "requirements": [],
