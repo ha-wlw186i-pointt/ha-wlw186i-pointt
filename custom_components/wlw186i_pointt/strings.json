@@ -1,0 +1,46 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Authenticate with SingleKey-ID",
+        "description": "Click the link below to log in with your Bosch SingleKey-ID (MyBuderus) account.\n\nAfter login the browser will show a \"can't reach this site\" error — this is expected.\n\nCopy the **full URL** from the browser address bar and paste it below."
+      },
+      "callback": {
+        "title": "Paste the Redirect URL",
+        "description": "[Log in with SingleKey-ID]({auth_url})\n\nAfter login, copy the full URL from the browser address bar (it starts with `com.buderus.tt.dashtt://...`) and paste it below.",
+        "data": {
+          "callback_url": "Redirect URL"
+        },
+        "data_description": {
+          "callback_url": "The full URL from the browser address bar after login"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Re-authenticate",
+        "description": "Your session has expired. Please re-authenticate with your SingleKey-ID account."
+      }
+    },
+    "error": {
+      "invalid_url": "Could not find an authorization code in the URL. Make sure you copied the entire URL.",
+      "token_exchange_failed": "Failed to exchange the authorization code for tokens. Please try again."
+    },
+    "abort": {
+      "already_configured": "This gateway is already configured.",
+      "no_gateway": "No heat pump gateway found on this account. Make sure you have paired a device in the MyBuderus app.",
+      "reauth_successful": "Re-authentication successful."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "WLW186i Pointt Options",
+        "data": {
+          "scan_interval": "Update interval (seconds)"
+        },
+        "data_description": {
+          "scan_interval": "How often to poll the heat pump (300–3600 seconds, default 600)"
+        }
+      }
+    }
+  }
+}
